@@ -1,5 +1,5 @@
 # Curso Python - FIAP
-# Listas Multiplas
+# Listas Multiplas - usando o indice como elemento identificador de cada item em cada uma das listas abaixo.
 # 21.04.2022 - 20h14
 
 # Declarando as listas
