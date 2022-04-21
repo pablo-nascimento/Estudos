@@ -2,3 +2,11 @@
 # Variaveis e Listas - Introducao
 # 21.04.2022 - 19h57
 
+inventario = []
+resposta = 'S'
+while resposta == 'S':
+    inventario.append(input('Equipamento: '))
+    inventario.append(float(input('Valor: ')))
+    inventario.append(int(input('Numero Serial: ')))
+    inventario.append(input('Departamento: '))
+    resposta = input('Digite \"S\" para continuar:  ')
