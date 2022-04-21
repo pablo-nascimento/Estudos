@@ -11,3 +11,5 @@ idade = int(input('Informe a idade: '))
 # Estrutura de decisao simples
 if idade >= 65:
     print('O paciente ' + nome + ' possui atendimento prioritario.')
+else:
+    print('O paciente ' + nome + ' NAO possui atendimento prioritario.')
