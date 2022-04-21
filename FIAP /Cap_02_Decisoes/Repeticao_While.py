@@ -2,6 +2,10 @@
 # Estruturas de Repeticao - Repeticao While
 # 21.04.2022 - 19h31
 
+# enquanto variavel condicao
+#   bloco de codigo executado ate que a condicao seja satisfeita
+#   variavel = variavel + 1 - incremento da variavel.
+
 # Variavel usada para controlar o laco
 num = int(input('Informe um numero: '))
 
