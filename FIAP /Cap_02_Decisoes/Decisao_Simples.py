@@ -13,3 +13,5 @@ if idade >= 65:
     print('O paciente ' + nome + ' possui atendimento prioritario.')
 else:
     print('O paciente ' + nome + ' NAO possui atendimento prioritario.')
+
+# Estrutura de decisao completa, com o SE e SENAO.
