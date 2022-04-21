@@ -11,6 +11,7 @@ print(nome + ' trabalha na empresa ' + empresa + '.')
 print('Possui: ' + str(qtde_funcionarios) + ' funcionarios.')
 print('Valor medio da mensalidade: R$' + str(media_Mensalidade) + '.')
 print('== Verificando o tipo de dado de cada variavel: ==')
+print('\n\n')
 
 print('Variavel nome: ' , type(nome))
 print('Variavel empresa: ',  type(empresa))
