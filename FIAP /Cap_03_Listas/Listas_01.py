@@ -17,3 +17,6 @@ while resposta == 'S':
 
     # Variavel de controle do laco
     resposta = input('Digite \"S\" para continuar:  ').upper()
+
+# Dando a saida da lista inventario
+print(inventario)
