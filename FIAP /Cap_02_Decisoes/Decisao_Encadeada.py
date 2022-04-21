@@ -7,9 +7,12 @@
 # Variaveis
 nome = input('Informe o nome: ')
 idade = int(input('Informe a idade: '))
-doenca = input('Suspeita de doenca contagiosa (SIM / NAO)').upper()
+doenca = input('Suspeita de doenca contagiosa (SIM / NAO): ').upper()
 
 # Estrutura de decisao encadeada
+# Verifica se, a idade e maior ou igual a 65, se tem doenca.
+# Nao satisfeitas estas condicoes, "cai" no else.
+
 if idade >= 65:
     print('O paciente ' + nome + ' possui atendimento prioritario.')
 elif doenca == 'SIM':
