@@ -1,1 +1,2 @@
-print(‘Atualizando meu GitHub com arquivos .py’)
+print('Atualizando meu GitHub com arquivos .py')
+print('Hello Word')
