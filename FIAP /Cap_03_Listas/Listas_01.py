@@ -18,5 +18,10 @@ while resposta == 'S':
     # Variavel de controle do laco
     resposta = input('Digite \"S\" para continuar:  ').upper()
 
-# Dando a saida da lista inventario
+# Dando a saida da lista inventario, de forma unica
 print(inventario)
+
+# Usando a estrutura de repeticao FOR para percorrer a lista, e dar a saida de cada item
+# de forma individual.
+for id in inventario:
+    print(id)
