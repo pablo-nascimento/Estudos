@@ -47,7 +47,13 @@ print('\t')
 depreciacao = input('Informe o nome do equipamento a ser depreciado: ')
 for elemento in inventario:
         if depreciacao == elemento[0]: # Comparando o que foi informado com o que está salvo na primeira posicao da lista
-            print('Equipamento: ', indice)
+            print('Equipamento: ', elemento[0])
             print('Valor Atual: ', elemento[1]) # Apontando a posicao da lista onde fica armazenado o valor.
             elemento[1] = elemento[1] * 0.9 # operacao matematica para alterar o valor.
             print('Valor após depreciacao: ', elemento[1]) # Valor atualizado.
+
+serial = int(input('Informe o serial do equipamento a ser excluido: '))
+for elemento in inventario:
+    if serial == elemento[2]:
+        inventario.remove(elemento)
+print(inventario)
