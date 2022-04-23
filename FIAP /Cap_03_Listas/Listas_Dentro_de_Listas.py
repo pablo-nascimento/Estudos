@@ -18,5 +18,8 @@ while resposta == 'S':
     inventario.append(equipamento)
     resposta = input('Deseja adicionar mais algum equipamento? ').upper()
 
-
+# Testando a saida do que vai ficar salvo na lista inventario.
+# Cada equipamento(nome, valor, serial, departamento, será uma unica lista, dentro da lista inventario.
+for indice in range(0, len(inventario)):
+    print(inventario[indice])
 
