@@ -18,8 +18,14 @@ while resposta == 'S':
     resposta = input('Deseja inserir mais algum equipamento? S/N: ').upper()
     print('\n')
 
+# Pesquisa de dados dentro da lista #
+# Variavel pesquisa - vai receber o conteudo a ser pesquisado.
 pesquisa = input('Pesquisa de equipamento. Informe o nome do equipamento para pesquisa: ')
+
+# Percorrendo a lista equipamento
 for elemento in range(0, len(equipamento)):
+    # Comparando o que foi digitado pelo usuario com o que está salvo em cada posicao da lista equipamento
+    # Condicao abaixo sendo satisfeita, o bloco interno do IF é executado.
     if pesquisa == equipamento[elemento]:
         print('Equipamento número: ', elemento + 1)
         print('Equipamento: ', equipamento[elemento])
