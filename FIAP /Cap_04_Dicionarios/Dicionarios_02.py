@@ -13,4 +13,8 @@ while escolha == 'I' or escolha == 'P' or escolha == 'E' or escolha == 'L':
     if escolha == 'I':
         inserirUsuario(users)
         escolha = opcaoUsuario()
+    elif escolha == 'P':
+        pesquisarUsuario(users)
+    elif escolha == 'E':
+        # excluirUsuario(users)
 
