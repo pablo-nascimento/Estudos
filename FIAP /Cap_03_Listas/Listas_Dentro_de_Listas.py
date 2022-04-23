@@ -40,12 +40,14 @@ for elemento in inventario:
     for indice in elemento:
         if pesquisa == elemento[0]:
             print(indice)
+print('\t')
 
+# Alterando valores da lista interna.
+# Aqui, foi apontado manualmente, a posicao da lista interna onde está armazenado o valor a ser alterado.
 depreciacao = input('Informe o nome do equipamento a ser depreciado: ')
 for elemento in inventario:
-    for indice in elemento:
-        if depreciacao == elemento[0]:
+        if depreciacao == elemento[0]: # Comparando o que foi informado com o que está salvo na primeira posicao da lista
             print('Equipamento: ', indice)
             print('Valor Atual: ', elemento[1]) # Apontando a posicao da lista onde fica armazenado o valor.
-            elemento[1] = elemento[1] * 0.9
-            print('Valor após depreciacao: ', elemento[1])
+            elemento[1] = elemento[1] * 0.9 # operacao matematica para alterar o valor.
+            print('Valor após depreciacao: ', elemento[1]) # Valor atualizado.
