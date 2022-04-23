@@ -22,6 +22,13 @@ while resposta == 'S':
 # Testando a saida do que vai ficar salvo na lista inventario.
 # Cada equipamento(nome, valor, serial, departamento, será uma unica lista, dentro da lista inventario.
 # Pendencia - achar uma forma de incluir mais um laco por dentro, para percorrer cada item da lista interna.
-for indice in range(0, len(inventario)):
-    print(inventario[indice])
+#for indice in range(0, len(inventario)):
+ #   print(inventario[indice])
+
+# Pendencia acima listada, foi resolvida -
+# Usei mais um laco para percorrer a variavel do laco externo.
+for elemento in inventario:
+    for indice in elemento:
+        print(indice)
+    print('\t')
 
