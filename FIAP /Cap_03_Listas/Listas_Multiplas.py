@@ -18,6 +18,7 @@ while resposta == 'S':
     resposta = input('Digite \"S"\ para continuar: ').upper()
 
 # Utilizando o metodo FOR para percorrer e dar a saida do conteudo da lista.
+# Método len - usado para retornar o tamanho de uma variável. Neste caso, retornando o tamanho da lista equipamento
 for i in range(0, len(equipamento)):
     print('\nEquipamento: ', (i + 1))
     print('Nome: ', equipamento[i])
