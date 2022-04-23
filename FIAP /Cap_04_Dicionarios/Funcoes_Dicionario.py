@@ -24,3 +24,13 @@ def inserirUsuario(dicionario):
             input('Último acesso (xx.xx.xxxx): '),
             input('Estação de trabalho: ')
         ]
+
+def pesquisarUsuario(dicionario, chave):
+    print('Login: ', dicionario)
+    print(dicionario.get(chave))
+
+# def excluirUsuario(dicionario):
+
+
+def listarUsuario(dicionario):
+    print(dicionario)
