@@ -40,3 +40,12 @@ for elemento in inventario:
     for indice in elemento:
         if pesquisa == elemento[0]:
             print(indice)
+
+depreciacao = input('Informe o nome do equipamento a ser depreciado: ')
+for elemento in inventario:
+    for indice in elemento:
+        if depreciacao == elemento[0]:
+            print('Equipamento: ', indice)
+            print('Valor Atual: ', elemento[1]) # Apontando a posicao da lista onde fica armazenado o valor.
+            elemento[1] = elemento[1] * 0.9
+            print('Valor após depreciacao: ', elemento[1])
