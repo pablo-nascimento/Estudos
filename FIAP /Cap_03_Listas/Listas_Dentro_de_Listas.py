@@ -27,8 +27,16 @@ while resposta == 'S':
 
 # Pendencia acima listada, foi resolvida -
 # Usei mais um laco para percorrer a variavel do laco externo.
+# No exemplo usado no curso, a posicao da lista interna é apontada manualmente.
+# Preferi usar um laco interno para treinar o uso de laco dentro de laco.
 for elemento in inventario:
     for indice in elemento:
         print(indice)
     print('\t')
 
+# Busca
+pesquisa = input('Informe o nome do equipamento a ser pesquisado: ')
+for elemento in inventario:
+    for indice in elemento:
+        if pesquisa == elemento[0]:
+            print(indice)
