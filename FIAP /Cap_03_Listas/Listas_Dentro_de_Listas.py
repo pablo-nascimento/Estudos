@@ -59,7 +59,7 @@ for elemento in inventario:
         inventario.remove(elemento) # Removendo um item da lista inventario.
 print(inventario)
 
-# Funcoes matematicas pre definidas 
+# Funcoes matematicas pre definidas
 valores = []
 for elemento in inventario:
     valores.append(elemento[1])
