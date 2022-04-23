@@ -29,7 +29,23 @@ print('\t')
 
 
 # Pesquisa de valores do dicionario, através de sua respectiva chave
+# Variavel pesquisa recebe o que será pesquisado.
 pesquisa = input('Informe o estado para pesquisa: ').upper()
+
+# Laco for vai percorrer as chaves do dicionario
 for chave in estado.keys():
+    # Comparar o que estiver de chave com o conteudo da variavel pesquisa
     if pesquisa == chave:
+        # Em caso de retorno positivo, dada a saída dos valores correspondentes a chave pesquisada.
         print(estado.get(pesquisa))
+print('\t')
+
+# Removendo itens do dicionario
+remover = input('Informe o estado a ter os registros removidos: ')
+for chave in estado.keys():
+    if remover == chave:
+        estado.popitem()
+print('\t')
+
+for chave in estado.values():
+    print(chave)
