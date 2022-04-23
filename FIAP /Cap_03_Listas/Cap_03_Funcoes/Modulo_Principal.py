@@ -1,9 +1,14 @@
+# Curso Python - FIAP
+# Construçao e uso de funções no Python
+# 23.04.2022 - 12h57
+
+
 # Módulo principal - abaixo, declaraçao de importacao das funcoes definidas em Identificacao_de_Funcoes.py
 
 from Cap_03_Listas.Cap_03_Funcoes.Identificacao_de_Funcoes import *
 minhaLista = []
 print('Preenchendo...')
-preencherInventario(minhaLista) 
+preencherInventario(minhaLista)
 
 print('Exibindo...')
 exibirInventario(minhaLista)
