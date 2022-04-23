@@ -52,8 +52,17 @@ for elemento in inventario:
             elemento[1] = elemento[1] * 0.9 # operacao matematica para alterar o valor.
             print('Valor após depreciacao: ', elemento[1]) # Valor atualizado.
 
+# Exclusao de uma lista interna.
 serial = int(input('Informe o serial do equipamento a ser excluido: '))
 for elemento in inventario:
     if serial == elemento[2]:
-        inventario.remove(elemento)
+        inventario.remove(elemento) # Removendo um item da lista inventario.
 print(inventario)
+
+# Funcoes matematicas pre definidas 
+valores = []
+for elemento in inventario:
+    valores.append(elemento[1])
+print(min(valores))
+print(max(valores))
+print(sum(valores))
