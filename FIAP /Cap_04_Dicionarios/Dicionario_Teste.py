@@ -25,3 +25,11 @@ print('\t')
 # Método values - retornando somente os valores de cada chave.
 for chave in estado.values():
     print(chave)
+print('\t')
+
+
+# Pesquisa de valores do dicionario, através de sua respectiva chave
+pesquisa = input('Informe o estado para pesquisa: ').upper()
+for chave in estado.keys():
+    if pesquisa == chave:
+        print(estado.get(pesquisa))
