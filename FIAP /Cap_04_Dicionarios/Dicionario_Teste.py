@@ -11,3 +11,17 @@ estado = {'SP': ['Sao Paulo', 'Guarulhos, Campinas, Santos, Araçatuba, Sao Jos�
 
 estado['PR'] = ['Curitiba', 'Almirante Tamandare, Maringa, Londrina, Ponta Grossa, Paranagua']
 
+# Percorrendo todo o dicionario
+# Metodo items - retorna a chave e o seu valor.
+for chave in estado.items():
+    print(chave)
+print('\t')
+
+# Método keys - retorna somente as chaves, sem os valores.
+for chave in estado.keys():
+    print(chave)
+print('\t')
+
+# Método values - retornando somente os valores de cada chave.
+for chave in estado.values():
+    print(chave)
