@@ -11,11 +11,6 @@ escolha = opcaoUsuario()
 
 while escolha == 'I' or escolha == 'P' or escolha == 'E' or escolha == 'L':
     if escolha == 'I':
-        users[input('Login: ')] = \
-            [
-            input('Nome do usuário: '),
-            input('Último acesso (xx.xx.xxxx): '),
-            input('Estação de trabalho: ')
-            ]
-    escolha = opcaoUsuario()
+        inserirUsuario(users)
+        escolha = opcaoUsuario()
 
