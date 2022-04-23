@@ -9,6 +9,7 @@
 
 # Alimentando a lista.
 def preencherInventario(lista):
+    resposta = 'S'
     while resposta == 'S':
         equipamento = [
             input('Equipamento: '),
