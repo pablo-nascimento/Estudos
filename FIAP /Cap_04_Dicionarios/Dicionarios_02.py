@@ -11,10 +11,11 @@ escolha = opcaoUsuario()
 
 while escolha == 'I' or escolha == 'P' or escolha == 'E' or escolha == 'L':
     if escolha == 'I':
-        chave = input('Login: ')
-        usuario = input('Nome do usuário: ')
-        data_acesso = input('Último acesso (xx.xx.xxxx): ')
-        estacao = input('Estação de trabalho: ')
-        users[chave] = [usuario, data_acesso, estacao]
+        users[input('Login: ')] = \
+            [
+            input('Nome do usuário: '),
+            input('Último acesso (xx.xx.xxxx): '),
+            input('Estação de trabalho: ')
+            ]
     escolha = opcaoUsuario()
 
