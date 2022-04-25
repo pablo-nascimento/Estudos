@@ -41,11 +41,13 @@ for chave in estado.keys():
 print('\t')
 
 # Removendo itens do dicionario
-remover = input('Informe o estado a ter os registros removidos: ')
-for chave in estado.keys():
-    if remover == chave:
-        estado.popitem()
-print('\t')
+# Abordada nova estratégia, como está no curso da FIAP.
+# Verificada se o que estiver na variavel remover é diferente de vazio.
+# Verdadeiro, é chamado o método del passando por parametro dicionario[chave]
+remover = input('Informe o estado a ter os registros removidos: ').upper()
+if estado.get(remover) != None:
+    del estado[remover]
+    print('\t')
 
 for chave in estado.values():
     print(chave)
