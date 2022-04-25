@@ -17,6 +17,7 @@ def opcaoUsuario():
     return escolha
 
 # Inserir usuarios no dicionario
+# Está inserindo o login por último - Pendente.
 def inserirUsuario(dicionario):
     dicionario[input('Login: ')] = \
         [
@@ -27,6 +28,11 @@ def inserirUsuario(dicionario):
     print('\t')
 
 # Funcao de pesquisa dentro do dicionario - funciona, mas necessita de aprimoramentos.
+# Aprimoramentos realizados no dia 25.04.2022 - 19h57.
+# Pesquisa funciona da seguinte forma:
+# Recebe o login informado pelo usuario, e é percorrido o dicionario com o método keys
+# Comparada a chave de cada valor do usuario, e sendo igual ao login informado, é dada a saída dos respectivos valores
+# com o método get, tendo como parametro, o login informado.
 def pesquisarUsuario(dicionario):
     login = input('Informe o login: ')
     for chave in dicionario.keys():
@@ -37,9 +43,19 @@ def pesquisarUsuario(dicionario):
             print('Usuário não localizado.')
 
 def excluirUsuario(dicionario):
-    print(dicionario)
+    login = input('Informe o login: ')
+    for chave in dicionario.keys():
+        if chave == login:
+            dicionario.popitem()
+        else:
+            print('Usuário não localizado.')
+            listarUsuario(dicionario)
+            print('\t')
+            opcaoUsuario()
+            print('\t')
 
 
-
+# Função listarUsuario funcionando com o método items, que retorna tanto a chave, quanto o seu respectivo valor.
 def listarUsuario(dicionario):
-    print(dicionario)
+    for chave in dicionario.items():
+        print(chave, '\t')
