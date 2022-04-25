@@ -24,14 +24,17 @@ def inserirUsuario(dicionario):
             input('Último acesso (xx.xx.xxxx): '),
             input('Estação de trabalho: ')
         ]
+    print('\t')
+
 # Funcao de pesquisa dentro do dicionario - funciona, mas necessita de aprimoramentos.
 def pesquisarUsuario(dicionario):
     login = input('Informe o login: ')
     for chave in dicionario.keys():
         if chave == login:
             print('Login: ', login, '.')
-            for valor in dicionario.values():
-                print(valor, '\t')
+            print(dicionario.get(chave), '\t')
+        else:
+            print('Usuário não localizado.')
 
 def excluirUsuario(dicionario):
     print(dicionario)
