@@ -38,22 +38,15 @@ def pesquisarUsuario(dicionario):
     for chave in dicionario.keys():
         if chave == login:
             print('Login: ', login, '.')
-            print(dicionario.get(chave), '\t')
+            print(dicionario.get(chave), '\t\t')
         else:
             print('Usuário não localizado.')
 
+# Funcao de exclusao implementada conforme exemplo do curso.
 def excluirUsuario(dicionario):
     login = input('Informe o login: ')
-    for chave in dicionario.keys():
-        if chave == login:
-            dicionario.popitem()
-        else:
-            print('Usuário não localizado.')
-            listarUsuario(dicionario)
-            print('\t')
-            opcaoUsuario()
-            print('\t')
-
+    if dicionario.get(login) != None:
+        del dicionario[login]
 
 # Função listarUsuario funcionando com o método items, que retorna tanto a chave, quanto o seu respectivo valor.
 def listarUsuario(dicionario):
