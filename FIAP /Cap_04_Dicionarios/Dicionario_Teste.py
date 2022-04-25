@@ -49,5 +49,5 @@ if estado.get(remover) != None:
     del estado[remover]
     print('\t')
 
-for chave in estado.values():
+for chave in estado.items():
     print(chave)
