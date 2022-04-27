@@ -17,8 +17,10 @@ while escolha == 'I' or escolha == 'P' or escolha == 'E' or escolha == 'L':
         pesquisarUsuario(users)
         escolha = opcaoUsuario()
     elif escolha == 'E':
-        excluirUsuario(users)
+        excluirUsuario(users, input('Informe o login: '))
+        escolha = opcaoUsuario()
     elif escolha == 'L':
         listarUsuario(users)
         escolha = opcaoUsuario()
+
 
