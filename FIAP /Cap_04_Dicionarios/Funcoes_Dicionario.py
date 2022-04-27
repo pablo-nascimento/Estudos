@@ -19,9 +19,7 @@ def opcaoUsuario():
 # Inserir usuarios no dicionario
 # Está inserindo o login por último - Pendente.
 def inserirUsuario(dicionario):
-    dicionario[input('Login: ')] = \
-        [
-            input('Nome do usuário: '),
+    dicionario[input('Login: ')] = [ input('Nome do usuário: '),
             input('Último acesso (xx.xx.xxxx): '),
             input('Estação de trabalho: ')
         ]
@@ -43,10 +41,11 @@ def pesquisarUsuario(dicionario):
             print('Usuário não localizado.')
 
 # Funcao de exclusao implementada conforme exemplo do curso.
-def excluirUsuario(dicionario):
-    login = input('Informe o login: ')
+def excluirUsuario(dicionario, login):
     if dicionario.get(login) != None:
         del dicionario[login]
+    else:
+        print('Login ', login, ' não localizado.')
 
 # Função listarUsuario funcionando com o método items, que retorna tanto a chave, quanto o seu respectivo valor.
 def listarUsuario(dicionario):
