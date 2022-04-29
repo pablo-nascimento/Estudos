@@ -54,7 +54,6 @@ def excluirUsuario(dicionario, login):
 
 # Função listarUsuario funcionando com o método items, que retorna tanto a chave, quanto o seu respectivo valor.
 def listarUsuario(dicionario):
-    for chave in dicionario.items():
-        print(chave, '\t')
+    for chave, valor in dicionario.items():
+        print(chave,' - ' ,valor, '\t')
     print('\t')
-
