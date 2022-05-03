@@ -1,3 +1,50 @@
 Digital Innovation One - 02.05.2022 - 20h17
 Curso Fundamentos de ETL com Python
 
+ETL - definição
+E - Extract - extracão
+Dados extraídos das mais diversas fontes de dados, como BDs, arquivos, APIs. 
+Processadas em lotes, em tempo real. 
+Dados originados de diferentes fontes de dados, que podem vir de forma inconsistente. Deve-se garantir a consistencia desses dados
+
+
+T - Transform - transformação
+Aonde os dados são propagados para a area de transformaçao de dados. 
+Preparação, limpeza e validação de dados. 
+
+L - Load - carregamento
+Carregados em um data warehouse, por exemplo. 
+
+
+Por que é necessário o processo de ETL?
+Tomada de decisão por parte da gerencia da empresa. Como se tomar essas decisões? Através dos dados. Estes, que geram informações, que dá a possibilidade de tomada de decisão. 
+Tomada de decisão com dados provenientes de diversas fontes (dados vindos de arquivos, como planilhas Excel, arquivos em pdf, txt, json), base de dados interna e externa, dados de redes sociais, dados de sensores. 
+Dados extraídos para o nosso contexto, que devem ser relacionados, de forma organizada. 
+Dados extraídos por lotes (grandes quantidades de dados, com grande consumo de processamento e memória)
+Dados em tempo real. 
+Dados sobre a empresa.
+Todos os dados precisam ser extraídos e transformados.
+Transformados, para ser validados, normalizados e carregados dentro do contexto. 
+Dados que devem ser íntegros, consistentes, afim de que desses dados, possa se extrair informações que auxiliem o gestor na sua tomada de decisão. 
+Carregamento dentro das bases de dados, onde são relacionados, e com o auxilio de ferramentas de análise de dados, usa-se essa base para gerar as informações necessárias. 
+
+
+Visão Geral deste processo
+Termos mais técnicos
+- Data Source - fontes de dados que fornecerão os dados para uso no processo de ETL. 
+- Data Warehouse - base de dados. 
+- Data Validation - Validação 
+- Data Cleaning - limpeza
+- Data Transforming - transformação
+- Data Aggregation - agregaçào
+- Data Loading - carregamento
+- Data Flow ou Pipeline - etapas ou processo percorrido pelos dados até serem disponibilizados. 
+
+
+Ferramentas e Pacotes para Python
+- Apache AirFlow - 
+- Luigi (Pacote Python) - construído pela Spotify. Construção de ferramentas de visualizaçao. Interface por linha de comando. Processos de ETL mais simples.
+- Bonobo (Python) - execução de diversos processos em paralelo. Extrai dados de diversas fontes (csv, json...)
+- Bubbles - ferramentas para inspecionar e auditar dados. Foco em compreensão e transparencia do processo de ETL. 
+- Petl - pacote de uso geral. Linguagem Python. Fácil para trabalhar. Nao foi projetado para conjuntos de dados muito grande. 
+- Pandas - Pode ser usado numa massa maior de dados. Muito difundido dentro da comunidade. 
