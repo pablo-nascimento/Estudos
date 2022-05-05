@@ -7,3 +7,4 @@ Não por ser "linguagem da moda", mas, porque, particularmente, me adaptei muito
 
 Cursando atualmente:
 Python - FIAP - 60 horas.
+Fundamentos de ETL com Python - 5 horas - nível intermediário.
