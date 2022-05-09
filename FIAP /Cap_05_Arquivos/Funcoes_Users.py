@@ -2,7 +2,7 @@
 # Uso de dicionarios somado a manipulação de arquivos.
 # 09.05.2022 - 20h00
 
-def opcaoUsuario():
+def opcao():
     escolha = (
         input('Escolha uma das opções abaixo: ' +
               'I - Inserir um novo usuário: ' +
@@ -15,9 +15,10 @@ def opcaoUsuario():
     return escolha
 
 def inserir(dicionario):
-    dicionario[input("Login:")] = [input('Nome do usuário: '),
+    login = input("Login: ")
+    dicionario[login] = [input('Nome do usuário: '),
                 input('Data do último acesso: '),
-                input('Estação de trabalho:') ]
+                input('Estação de trabalho: ') ]
 
 def pesquisar(dicionario):
     login = input("Login: ")
