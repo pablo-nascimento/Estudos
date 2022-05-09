@@ -19,7 +19,15 @@ def inserir(dicionario):
     dicionario[login] = [input('Nome do usuário: '),
                 input('Data do último acesso: '),
                 input('Estação de trabalho: ') ]
-    print("\t")
+    salvar(dicionario)
+    print('\n')
+
+# Implementando a funcao de salvar o dicionario dentro do arquivo.
+# Usando um laco para percorrer o dicionario e salvar a chave e seu respectivo valor. 
+def salvar(dicionario):
+    with open("db_users.txt", "a") as arquivo:
+        for chave, valor in dicionario.items():
+            arquivo.write(chave + " - " + str(valor))
 
 def pesquisar(dicionario):
     login = input("Login: ")
