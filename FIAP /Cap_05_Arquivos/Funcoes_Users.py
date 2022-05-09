@@ -19,10 +19,11 @@ def inserir(dicionario):
     dicionario[login] = [input('Nome do usuário: '),
                 input('Data do último acesso: '),
                 input('Estação de trabalho: ') ]
+    print("\t")
 
 def pesquisar(dicionario):
     login = input("Login: ")
-    for chave in dicionario.keys():
+    for chave in dicionario.keys(): # Acessando cada uma das chaves do dicionario.
         if chave == login:
             print("Login: ", login)
             print(dicionario.get(chave), '\t')
@@ -36,4 +37,4 @@ def excluir(dicionario, login):
 
 def listar(dicionario):
     for chave, valor in dicionario.items():
-        print(chave + " - " + valor + "." + "\n")
+        print(chave, " - ", valor, ".", "\n")
