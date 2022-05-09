@@ -7,19 +7,21 @@ from Cap_05_Arquivos.Funcoes_Users import *
 # Dicionario vazio
 users = {}
 
+# Variavel que controla o laco abaixo.
 escolha = opcao()
 
+# Repeticao para manipular o dicionario.
 while escolha == "I" or escolha == "P" or escolha == "E" or escolha == "L":
     if escolha == "I":
         inserir(users)
         escolha = opcao()
-    if escolha == "P":
+    elif escolha == "P":
         pesquisar(users)
         escolha = opcao()
-    if escolha == "E":
-        excluir(users)
-        escolha == opcao()
-    if escolha == "L":
+    elif escolha == "E":
+        excluir(users, input("Login: "))
+        escolha = opcao()
+    elif escolha == "L":
         listar(users)
-        escolha == opcao()
+        escolha = opcao()
 
