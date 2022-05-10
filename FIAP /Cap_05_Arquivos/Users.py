@@ -16,7 +16,7 @@ while escolha == "I" or escolha == "P" or escolha == "E" or escolha == "L":
         inserir(users)
         escolha = opcao()
     elif escolha == "P":
-        pesquisar(users)
+        pesquisar()
         escolha = opcao()
     elif escolha == "E":
         excluir(users, input("Login: "))
