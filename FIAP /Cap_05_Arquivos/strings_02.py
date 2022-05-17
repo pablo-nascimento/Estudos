@@ -5,3 +5,6 @@
 texto = 'Python é legal.'
 
 print(texto.find('a')) # Retorna a primeira ocorrencia do que foi passado por parametro
+
+# Split - separando a string pelo espaco entre as palavras, definido como parametro.
+print(texto.split(' '))
