@@ -12,3 +12,7 @@ with open("iris.data", "r") as arquivo: # Abrindo o arquivo no modo leitura.
 
 print(base_dados)
 print(base_dados[0][2]) # Acessando a terceira posicao da lista interna. Primeira posicao da lista externa.
+
+print(float(base_dados[0][0]) + float(base_dados[0][1]))
+# Somando as duas primeiras posicoes da primeira lista
+# Se fez necessario converter as posicoes para float, para fazer as operacoes de soma.
