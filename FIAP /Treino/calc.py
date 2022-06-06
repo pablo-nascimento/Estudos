@@ -10,22 +10,22 @@ operacao = int(input("1 - Soma: \n" +
                      "4 - Divisão: "))
 
 if operacao == 1:
-    print("Soma: ", n1, " + ", n2, " = " ,(n1 + n2))
+    print("\nSoma: ", n1, " + ", n2, " = " ,(n1 + n2))
 elif operacao == 2:
     if n1 > n2:
-        print("Subtração: ", n1, " - ", n2, " = ", (n1 - n2))
+        print("\nSubtração: ", n1, " - ", n2, " = ", (n1 - n2))
     elif n2 > n1:
-        print("Subtração: ", n2, " - ", n1, " = ", (n2 - n1))
+        print("\nSubtração: ", n2, " - ", n1, " = ", (n2 - n1))
 elif operacao == 3:
-    print("Multiplicação: ", n1, " + ", n2, " = ", (n1 * n2))
+    print("\nMultiplicação: ", n1, " * ", n2, " = ", (n1 * n2))
 elif operacao == 4:
     if n1 > n2:
-        print("Divisão: ", n1, " + ", n2, " = ", (n1 / n2))
+        print("\nDivisão: ", n1, " / ", n2, " = ", (n1 / n2))
     elif n2 > n1:
-        print("Divisão: ", n1, " + ", n2, " = ", (n2 / n1))
+        print("\nDivisão: ", n1, " / ", n2, " = ", (n2 / n1))
     elif n1 == n2:
-        print("Os dois números informados são iguais.")
-print("Calculadora finalizada...")
+        print("\nOs dois números informados são iguais.")
+print("\nCalculadora finalizada...")
 
 
 
