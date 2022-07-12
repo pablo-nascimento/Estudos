@@ -15,7 +15,7 @@ while saida != "X": # variavel saida for diferente de X
     msg = input("Mensagem: ") # Recebendo uma mensagem
 
     # sendto - enviando a mensagem codificada (bytes) para o servidor na porta definidda
-    obj_socket.send(msg.encode(), (servidor, porta))
+    obj_socket.send(msg.encode())#, (servidor, porta))
 
     # Aguardando a resposta informando o range maximo de conexoes de onde essa resposta pode vir
     # metodo recvfrom gera uma tupla com os dados (resposta que veio do servidor), e informacoes da origem desses dados
